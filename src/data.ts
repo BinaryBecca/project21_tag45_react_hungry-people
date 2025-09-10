@@ -1,11 +1,6 @@
-type MenuItem = {
-  category: string
-  name: string
-  price: string
-  description?: string
-}
+import type { IMenuItem } from "./interfaces/IMenuItem"
 
-const hungryData: MenuItem[] = [
+const hungryData: IMenuItem[] = [
   {
     category: "pizza",
     name: "Pizza Margherita",
