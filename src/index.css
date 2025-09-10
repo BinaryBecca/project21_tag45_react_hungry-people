@@ -1,8 +1,30 @@
-/* @import "tailwindcss"; */
+@font-face {
+  font-family: OpenSans;
+  src: url("../src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: Banny;
+  src: url("../src/assets/fonts/Banny-Round.otf");
+}
+
+@import "tailwindcss";
 
 :root {
+  --font-opensans: OpenSans;
+  --font-banny: Banny;
+  --buttonYellow: #e8c300;
   font-size: 100%;
+  font-family: var(--font-opensans), Arial, Helvetica, sans-serif;
 }
+
+.banny-font {
+  font-family: var(--font-banny);
+}
+
+/* .buttonYellow {
+  color: var(--buttonYellow); */
+/* } */
 
 /* color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
