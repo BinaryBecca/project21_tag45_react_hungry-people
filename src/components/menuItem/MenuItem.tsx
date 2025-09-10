@@ -12,16 +12,15 @@ interface MenuItemProps {
 export default function MenuItem({ menuItem }: MenuItemProps) {
   return (
     <>
-      <ul>
+      <ul className="flex flex-wrap items-center justify-center">
         {menuItem.map((item) => (
-          <li key={item.name} className="flex flex-row gap-[1rem]">
-            <div className="flex flex-col">
-              <p className="banny-font text-l">{item.name}</p>
-              <p className="text-gray-200">{item.description}</p>
+          <li key={item.name} className="flex flex-col w-[25rem] px-[2rem] py-[1rem]">
+            <div className="banny-font text-xl">
+              <p>
+                {item.name} . . . . {item.price}
+              </p>
             </div>
-            <div>
-              <p className="banny-font text-l">{item.price}</p>
-            </div>
+            <p className="text-gray-500">{item.description}</p>
           </li>
         ))}
       </ul>
