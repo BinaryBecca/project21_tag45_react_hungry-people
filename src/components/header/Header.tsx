@@ -1,3 +1,4 @@
+import ButtonDown from "../buttonDown/ButtonDown"
 import Buttons from "../buttons/Buttons"
 import Nav from "../nav/Nav"
 
@@ -22,9 +23,9 @@ export default function Header() {
               backgroundColor="var(--buttonYellow)"
               borderColor="var(--buttonYellow)"
             />
-            <Buttons to="booking" buttonText="BOOK TABLE" backgroundColor="transparent" borderColor="white" />
+            <Buttons to="/" buttonText="EXPLORE" backgroundColor="transparent" borderColor="white" />
           </div>
-          <img className="max-w-[3rem] object-contain" src="/header_clock.png" alt="clock" />
+          <ButtonDown IDButtonDown="buttonDownEndPoint" />
         </div>
 
         <div className="flex flex-col items-end justify-between gap-[1.5rem] ">

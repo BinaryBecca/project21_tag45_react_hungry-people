@@ -3,7 +3,7 @@ import React from "react"
 export default function Bookingpage() {
   return (
     <>
-      <div>bookingpage</div>
+      <div id="buttonDownEndPoint">bookingpage</div>
     </>
   )
 }

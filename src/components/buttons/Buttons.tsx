@@ -13,7 +13,7 @@ export default function Buttons({ to, buttonText, backgroundColor, borderColor, 
     <>
       <Link
         style={{ backgroundColor, borderColor }}
-        className={`flex items-center justify-center text-nowrap p-[1.5rem] text-white text-sm border rounded-[1rem] px-[${paddingX}]`}
+        className={`flex items-center justify-center text-nowrap p-[1.5rem] text-white text-sm border rounded-[1rem] px-[${paddingX}] min-w-[10rem]`}
         to={to}>
         {buttonText}
       </Link>
