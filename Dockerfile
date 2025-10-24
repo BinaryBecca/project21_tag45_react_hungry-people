@@ -18,8 +18,16 @@ EXPOSE 5173
 # docker-compose build
 # docker-compose up
 
-# Achtung package.json anpassen!:
+#! Achtung package.json anpassen!:
 #   "scripts": {
 #   "dev": "vite --host"
 # }
 
+#! Achtung für Hot Reload (windows) vite.config anpassen 😒
+#  server: {
+#     watch: {
+#       usePolling: true,
+#     },
+#     host: "0.0.0.0",
+#     port: 5173,
+#   },
