@@ -1,4 +1,3 @@
-import React from "react"
 import Headlines from "../../components/headlines/Headlines"
 import Images from "../../components/images/Images"
 
