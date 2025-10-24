@@ -18,6 +18,10 @@
   font-family: var(--font-opensans), Arial, Helvetica, sans-serif;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .banny-font {
   font-family: var(--font-banny);
 }

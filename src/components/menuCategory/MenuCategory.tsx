@@ -1,7 +1,7 @@
 import type { IMenuItem } from "../../interfaces/IMenuItem"
 
 interface MenuCategoryProps {
-  menuCategory: IMenuItem[]
+  menuCategory: string[]
   onClick: () => void
 }
 
@@ -10,7 +10,9 @@ export default function MenuCategory({ menuCategory, onClick }: MenuCategoryProp
     <>
       <div>
         {menuCategory.map((category, index) => (
-          <p key={index}>{category.category}</p>
+          <button key={index} onClick={onClick}>
+            {category.toUpperCase()}
+          </button>
         ))}
       </div>
     </>

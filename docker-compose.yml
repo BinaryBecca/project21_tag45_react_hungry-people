@@ -1,0 +1,18 @@
+services:
+  server:
+    build:
+      context: .
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 5173:5173
+      # Bind-Mount!
+    volumes:
+      # in Container unter /app spiegeln
+      - .:/app
+      #anonymes Volume > um nicht lokale node_modules in container verwenden
+      - /app/node_modules
+# Unterschied Volume und Bind Mount
+# https://www.nnscript.de/docker-volume-und-bind-mount-was-ist-der-unterschied-und-wann-sollte-man-welches-verwenden/
+
+# https://docs.docker.com/guides/nodejs/develop/
